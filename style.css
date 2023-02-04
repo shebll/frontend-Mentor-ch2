@@ -1,0 +1,179 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Overpass', sans-serif;;
+}
+ul{
+  list-style: none;
+  margin: 0px ;
+  padding: 0px;
+}
+ul li{
+  margin: 0%;
+  padding: 0%;
+}
+a{
+  text-decoration: none;  
+}
+.container{
+  height: 100vh;
+  background-color: hsl(216, 12%, 8%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .card.show{
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 380px;
+  background-color:  hsl(213, 19%, 18%);
+  padding: 25px;
+  border-radius: 18px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+}
+.container .card.show .header img {
+  padding: 10px;
+  width: 40px;
+  background-color: hsl(210, 7%, 29%);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.container .card.show .info h2{
+  font-size: 32px;
+  color: white;
+  margin-top:25px ;
+  margin-bottom: 0px;
+}
+.container .card.show .info p{
+  margin: 10px 0px 15px 0px;
+  font-size: 15px;
+  color: hsl(217, 12%, 63%);
+}
+.container .card.show .selection ul{
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  margin: 26px 0px;
+  
+}
+.container .card.show .selection ul li{
+  cursor: pointer;
+  display: inline;
+  color: hsl(217, 12%, 63%);
+  text-align: center;
+  background-color: hsl(210, 7%, 29%);
+  padding: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+.container .card.show .selection ul li:hover{
+  background-color: hsl(217, 12%, 63%);
+  color:#fff;
+  
+}
+.container .card.show .selection ul li.active{
+  background-color: orange ;
+  color: #fff;
+}
+.container .card.show .button input{
+  width: 100%;
+  cursor: pointer;
+  margin-top: 10px;
+  background-color: orange;
+  text-align: center;
+  padding: 11px 0px;
+  border-radius: 21px;
+  font-size: 18px;
+  color: white;
+  outline: none;
+  border:none;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+.container .card.show .button input:hover{
+  background-color: white;
+  color: orange;;
+}
+
+
+.container .card.hidden{
+  
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 380px;
+  background-color:  hsl(213, 19%, 18%);
+  padding: 25px;
+  border-radius: 18px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+  display: none;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+.container .card.hidden .header img {
+  margin-bottom: 28px;
+
+}
+.container .card.hidden .selection {
+  line-height: 1;
+  padding: 9px 16px;
+  background-color: hsl(210, 7%, 29%);
+  color: orange;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}.container .card.hidden .info {
+  text-align: center;
+}
+.container .card.hidden .info h2{
+  font-size: 32px;
+  color: white;
+  margin-top:25px ;
+  margin-bottom: 0px;
+}
+.container .card.hidden .info p{
+  margin: 10px 0px 15px 0px;
+  font-size: 15px;
+  color: hsl(217, 12%, 63%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.card{  
+  background-image: linear-gradient(to bottom, hsl(245, 27%, 17%), hsl(215, 26%, 18%));
+}
