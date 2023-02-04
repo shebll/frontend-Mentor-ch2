@@ -30,7 +30,7 @@ a{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 380px;
+  width: 340px;
   background-color:  hsl(213, 19%, 18%);
   padding: 25px;
   border-radius: 18px;
@@ -127,7 +127,7 @@ a{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 380px;
+  width: 340px;
   background-color:  hsl(213, 19%, 18%);
   padding: 25px;
   border-radius: 18px;
